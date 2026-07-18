@@ -1,0 +1,61 @@
+Problem Statement
+For centuries, the Kingdom of Valoria has relied on enchanted messengers to carry royal orders between cities.
+
+Each city may possess one-way messenger portals leading to other cities. If a messenger enters a portal, they immediately appear in the destination city. Over time, a complicated network of portals has formed throughout the kingdom.
+
+Princess Meera is planning a grand royal announcement. She wishes for the announcement to eventually reach every city in the kingdom.
+
+The kingdom's scholars have discovered an unusual property of the portal system. In some groups of cities, a messenger can travel from any city in the group to every other city in the same group using a sequence of portals. These groups are called communication circles.
+
+Instead of placing royal announcers in every city, Meera wants to place them only in carefully chosen cities.
+
+Whenever a city initially receives the announcement, messengers begin using the portals automatically. Every city reachable through the portal network from that starting city eventually learns the announcement.
+
+The royal treasury wants to spend as little gold as possible. Therefore, Meera wants to determine the minimum number of cities in which announcers must be stationed initially so that eventually every city in the kingdom hears the announcement.
+
+Input Format
+The first line contains two integers N and M.
+●​ N = number of cities
+●​ M = number of portals
+The next M lines contain two integers U and V indicating a portal from U to V.
+
+Output Format
+Print a single integer representing the minimum number of initial announcers required.
+
+Constraints
+1 ≤ N ≤ 2 × 105
+0 ≤ M ≤ 3 × 105
+1 ≤ U, V ≤ N
+
+Sample Testcase 0
+Testcase Input
+4 4
+1 2
+2 3
+3 4
+4 1
+Testcase Output
+1
+Explanation
+All cities belong to the same communication circle.
+One announcer is enough.
+
+Sample Testcase 1
+Testcase Input
+5 5
+1 2
+2 3
+3 1
+4 5
+4 5
+Testcase Output
+2
+Explanation
+Communication circles:
+{1,2,3}
+{4}
+{5}
+Only two circles have no incoming information from another circle:
+{1,2,3}
+{4}
+Thus two starting announcers are sufficient.
