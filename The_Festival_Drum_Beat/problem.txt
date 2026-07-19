@@ -1,0 +1,46 @@
+Problem Statement
+During the Grand River Festival, two giant ceremonial drums are played continuously.
+
+Kabir's drum produces a loud beat every A seconds.
+Tara's drum produces a loud beat every B seconds.
+At the start of the celebration, both drums are struck together.
+
+The event organizer wants to know after how many seconds the next simultaneous loud beat will occur. This helps synchronize fireworks and stage performances.
+
+Given the beat intervals of the two drums, determine the waiting time until they sound together again.
+
+Illustration: 
+
+Kabir's Drum : every 4 sec
+Tara's Drum : every 6 sec
+Time:
+0 1 2 3 4 5 6 7 8 9 10 11 12
+
+K : *       *       *       *
+T : *           *           *
+
+Both together again at 12
+Input Format
+Two integers A and B.
+
+Output Format
+Print the time after which both drums beat together again.
+
+Constraints
+1 ≤ A, B ≤ 105
+
+Sample Testcase 0
+Testcase Input
+4 6
+Testcase Output
+12
+Explanation
+The first common beat after the start occurs at 12 seconds.
+
+Sample Testcase 1
+Testcase Input
+5 8
+Testcase Output
+40
+Explanation
+40 is the earliest moment when both drum patterns align again.
