@@ -1,8 +1,6 @@
-import java.io.*;
-import java.math.*;
-import java.text.*;
-import java.util.*;
-import java.util.regex.*;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
 class Main {
 
